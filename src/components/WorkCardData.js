@@ -23,7 +23,7 @@ source:"https://github.com/prajwalm55/ecommerce-web",
     imgsrc: pro5,
     title:"Personal Portfolio Website",
 text:"I’ve developed a personal portfolio website using React, showcasing my projects, skills, and professional journey. It’s designed to reflect my passion for clean, responsive, and modern web development.",
-view:"https://github.com/prajwalm55/Automatic-parking-system",
+view:"https://my-portfolio-six-ruby-86.vercel.app/",
 },
 ];
 
