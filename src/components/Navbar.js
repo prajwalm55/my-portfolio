@@ -34,7 +34,7 @@ window.addEventListener("scroll", changeColor);
               <Link to="/about">About</Link>
           </li>
           <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="mailto:prajwalms4239@gmail.com">Contact</Link>
           </li>
           <li>
               <Link to="/project">Project</Link>

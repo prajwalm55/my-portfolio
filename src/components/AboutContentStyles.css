@@ -1,44 +1,206 @@
-
 .about {
-    width: 100%;
-    margin: 3rem 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    flex-wrap: wrap;
-    gap: 2rem;               
-  }
-  
-.about .left{
-    text-align:center;
-    margin: auto;
-    padding: 1rem;
-    max-width: 350px;
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #0a0a0a;
+  color: #fff;
 }
-.about .left p{
-    margin: 1.2rem 0;
+
+.about .left {
+  text-align: center;
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 400px;
 }
-.about .right{
-    max-width: 700px;
+
+.about .left h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00dfc4;
 }
-.right .img-container{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: center;
+
+.about .left p {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about .btn {
+  background: #00dfc4;
+  color: #0a0a0a;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about .btn:hover {
+  background: #fff;
+  color: #0a0a0a;
+}
+
+.about .right {
+  max-width: 700px;
+}
+
+.right .img-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  text-align: center;
+}
+
+.right .img {
+  max-width: 90%;
+  border: 2px solid #00dfc4;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.right .top {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 6;
+}
+
+.right .bottom {
+  grid-column: 4 / -1;
+  grid-row: 1;
+  z-index: 5;
+}
+
+.img-container:hover .top {
+  transform: translate(-10px, -10px);
+  box-shadow: 0 20px 40px rgba(0, 223, 196, 0.4);
+}
+
+.img-container:hover .bottom {
+  transform: translate(5px, 5px);
+  box-shadow: 0 20px 40px rgba(0, 223, 196, 0.3);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
     text-align: center;
+  }
+
+  .right .img-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .right .top {
+    grid-column: 1 / span 6;
+    padding-top: 10%;
+  }
+
+  .right .bottom {
+    grid-column: 2 / -1;
+  }
 }
-.right .img{
-    max-width: 90%;
-    border: 1px solid #333;
+/* Profile Image Round Frame */
+.profile-img {
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 2.5rem;
+  border-radius: 50%; /* makes the frame perfectly round */
+  overflow: hidden; /* crops image inside the circle */
+  border: 4px solid #00dfc4; /* matching accent color */
+  box-shadow: 0 10px 30px rgba(0, 223, 196, 0.3);
+  animation: fadeIn 1.5s ease;
 }
-.right .top{
-    grid-column: 1 / span8;
-    grid-row: 1;
-    padding-top: 20% ;
-    z-index: 6;
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures the image fills the frame without distortion */
+/* }
+.skills-section {
+  text-align: center;
+  margin-top: 3rem;
 }
-.right .bottom{
-    grid-column:  4 / -1;
-    grid-row: 1;
-    z-index: 5;
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  color: #00dfc4;
+  margin-bottom: 1.5rem;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 1.2rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: 220px;
+  text-align: center;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 223, 196, 0.1);
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 223, 196, 0.4);
+  background: rgba(0, 223, 196, 0.15);
+} */
+}
+.skills-list {
+  margin-top: 2rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.skills-list h2 {
+  color: #00dfc4;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skills-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list ul li {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #00dfc4;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.7rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.skills-list ul li:hover {
+  background: rgba(0, 223, 196, 0.15);
+  transform: translateX(5px);
+}
+.resume-btn {
+  margin-top: 1rem;
+  background: transparent;
+  color: #00dfc4;
+  border: 2px solid #00dfc4;
 }

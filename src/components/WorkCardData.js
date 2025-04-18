@@ -1,25 +1,28 @@
 import pro1 from "../assets/rear-view-programmer-working-all-night-long.jpg";
 import pro2 from "../assets/web3.jpg";
 import pro3 from "../assets/web4.jpg";
+import pro4 from "../assets/web7.webp";
+import pro5 from "../assets/Screenshot 2025-04-18 at 11.26.44 PM.jpg";
 
 
 const ProjectCardData =[
     {
         imgsrc: pro2,
-        title:"Ecommerce Website Design",
-    text:"Developed a full-stack e-commerce web application using Java, Spring Boot (backend), and React (frontend). Implemented features like product listings, cart management, user authentication, and responsive UI for seamless shopping experience.",
-    view:"https://github.com/prajwalm55/Automatic-parking-system",
+        title:"Ecommerce Website",
+    text:"Developed a e-commerce web application using Html, Css, Js React. Implemented features like responsive UI for seamless shopping experience.",
+    view:"https://ecommerce-web-gamma-seven.vercel.app/#nav",
 },
 {
-    imgsrc: pro2,
+    imgsrc: pro4,
     title:"Smart Parking Assistant with Python and IoT",
 text:"Developed an IoT-based smart parking system to automate vehicle detection and slot allocation using sensors.",
 view:"https://github.com/prajwalm55/Automatic-parking-system",
+source:"https://github.com/prajwalm55/ecommerce-web",
 },
 {
-    imgsrc: pro3,
-    title:"BMI calculator",
-text:"Developed a responsive BMI (Body Mass Index) calculator using React for dynamic user interaction. Allows users to input height and weight, instantly displaying BMI value and health category.",
+    imgsrc: pro5,
+    title:"Personal Portfolio Website",
+text:"I’ve developed a personal portfolio website using React, showcasing my projects, skills, and professional journey. It’s designed to reflect my passion for clean, responsive, and modern web development.",
 view:"https://github.com/prajwalm55/Automatic-parking-system",
 },
 ];

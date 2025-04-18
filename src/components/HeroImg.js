@@ -1,7 +1,7 @@
 import "./HeroImgStyles.css";
 import React from 'react'
 
-import IntroImg from "../assets/web2.jpg";
+import IntroImg from "../assets/web6.jpg";
 import { Link } from "react-router-dom";
 
 function HeroImg() {
@@ -12,12 +12,13 @@ function HeroImg() {
             src={IntroImg} alt="IntroImg"/>
         </div>
       <div className="content">
-        <p>HI, I'M  .</p>
-        <h1>Web Developer.</h1>
+        <h4>Hi, I’m Prajwal  .</h4>
+        <h1>A Passionate Web Developer .</h1>
         <div>
         <Link to="/project" className="btn">Projects</Link>
-        <Link to="/resume" className="btn">Resume</Link>
-        <Link to="/contact" className="btn btn">Contact</Link>
+        <a href="/prajwal_resume.pdf" target="_blank" rel="noopener noreferrer" className="btn">Resume</a>
+
+        <Link to="mailto:prajwalms4239@gmail.com" className="btn btn">Contact</Link>
 
         </div>
         </div>
