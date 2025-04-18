@@ -1,6 +1,6 @@
-import pro1 from "../assets/rear-view-programmer-working-all-night-long.jpg";
+// import pro1 from "../assets/rear-view-programmer-working-all-night-long.jpg";
 import pro2 from "../assets/web3.jpg";
-import pro3 from "../assets/web4.jpg";
+// import pro3 from "../assets/web4.jpg";
 import pro4 from "../assets/web7.webp";
 import pro5 from "../assets/Screenshot 2025-04-18 at 11.26.44 PM.jpg";
 
