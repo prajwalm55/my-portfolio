@@ -40,13 +40,23 @@ window.addEventListener("scroll", changeColor);
               <Link to="/project">Project</Link>
           </li>
       </ul>
-  <div className="hamburger" onClickk={handleClick}>
+  {/* <div className="hamburger" onClick={handleClick}>
     {click ? (<FaTimes size={20} style={{color:"#fff"}}/> ):(<FaBars size={20} style={{color:"#fff"}}/>)}
     <FaTimes size={20} style={{color:"#fff"}} />
   <FaBars size={20} style={{color:"#fff"}} />
-  </div>
+  </div> */}
+  <div className="hamburger" onClick={handleClick}>
+  {click ? (
+    <FaTimes size={20} style={{ color: "#fff" }} />
+  ) : (
+    <FaBars size={20} style={{ color: "#fff" }} />
+  )}
+  <FaTimes size={20} style={{ color: "#fff" }} />
+  <FaBars size={20} style={{ color: "#fff" }} />
+</div>
+
       </div>
     );
   };
 
-export default Navbar
+export default Navbar;
