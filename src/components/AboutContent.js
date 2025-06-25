@@ -178,70 +178,43 @@
 
 // export default AboutContent;
 import "./AboutContentStyles.css";
-import React1 from "../assets/web4.jpg";
-import React2 from "../assets/web2.jpg";
-import ProfilePic from "../assets/DSC_0639 copy.JPG"; // <-- add your profile picture image here
-
 import React from 'react';
 import { Link } from "react-router-dom";
+
+import React1 from "../assets/web4.jpg";
+import React2 from "../assets/web2.jpg";
+import ProfilePic from "../assets/DSC_0639 copy.JPG";
 
 const AboutContent = () => {
   return (
     <div className="about">
+
+      {/* Left Side - Bio & Resume */}
       <div className="left">
         <div className="profile-img">
-          <img src={ProfilePic} alt="Prajwal" />
+          <img src={ProfilePic} alt="Prajwal M" />
         </div>
+
         <h1>Who Am I?</h1>
         <p>
-          I'm <strong>Prajwal</strong> — a passionate Full-Stack Web Developer.
-          I specialize in creating modern, responsive, and dynamic web applications
-          using the latest technologies. I love turning creative ideas into beautiful, functional websites.
+          I'm <strong>Prajwal</strong> — a passionate Full-Stack Web Developer. I specialize in building responsive, dynamic, and modern web applications. I love turning creative ideas into real-world, production-ready solutions.
         </p>
-        <Link to="mailto:prajwalms4239@gmail.com">
-          <button className="btn">Contact Me</button>
-        </Link>
-        <a href="/Prajwal_Resume.pdf" download>
-  <button className="btn resume-btn">Download Resume</button>
-</a>
 
+        <div className="about-buttons">
+          <Link to="mailto:prajwalms4239@gmail.com">
+            <button className="btn">Contact Me</button>
+          </Link>
+
+          <a href="/prajwal_resume_react1.pdf" download>
+            <button className="btn resume-btn">Download Resume</button>
+          </a>
+        </div>
       </div>
-     
 
+      {/* Right Side - Skills & Images */}
+      <div className="right">
 
-<div className="right">
-  <div className="img-container">
-    <div className="img-stack top">
-      <img src={React1} className="img" alt="Web Design Showcase" />
-    </div>
-    <div className="img-stack bottom">
-      <img src={React2} className="img" alt="Web Development Project" />
-    </div>
-  </div>
-
-  <div className="skills-list">
-    <h2>Skills</h2>
-    <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Bootstrap</li>
-    <li>JavaScript</li>
-      <li>React</li>
-      <li>PostgreSQL</li>
-      <li>MongoDB</li>
-
-      <li>Java</li>
-      <li>SpringBoot</li>
-
-      <li>AWS</li>
-      <li>Python</li>
-
-
-    </ul>
-  </div>
-</div>
-
-{/* <div className="right">
+        {/* Image Showcase */}
         <div className="img-container">
           <div className="img-stack top">
             <img src={React1} className="img" alt="Web Design Showcase" />
@@ -250,7 +223,70 @@ const AboutContent = () => {
             <img src={React2} className="img" alt="Web Development Project" />
           </div>
         </div>
-      </div> */}
+
+        {/* Skills List - Organized */}
+        <div className="skills-section">
+          <h2>Skills</h2>
+          <div className="skills-grid">
+
+            <div className="skill-category">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+              </ul>
+            </div>
+
+            <div className="skill-category">
+              <h3>Backend</h3>
+              <ul>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>SpringBoot</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+
+            <div className="skill-category">
+              <h3>Database</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+
+            <div className="skill-category">
+              <h3>Tools & DevOps</h3>
+              <ul>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+
+            <div className="skill-category">
+              <h3>Languages</h3>
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+            </div>
+
+            <div className="skill-category">
+              <h3>Cloud</h3>
+              <ul>
+                <li>AWS</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };
